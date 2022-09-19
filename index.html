@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>title goes here</title>
+    <title>GoGoRX - Pharmacy</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo.png" />
+
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/assets/custom-css/style.css" />
     <link
@@ -16,32 +18,61 @@
     />
   </head>
   <body>
+    <div class="d-flex justify-content-between nav-bar">
+      <div class="d-flex align-items-center logo-container">
+        <div>
+          <img src="/assets/images/logo/logo.png" class="logo" />
+        </div>
+        <div class="display-6 ms-2">GoGo<span class="fw-bold">RX</span></div>
+      </div>
+
+      <div class="d-flex me-md-4">
+        <ul class="d-flex nav-links">
+          <li><a href="#" style="color: #6a66ff" class="links">Home</a></li>
+          <li><a href="#" class="links">About</a></li>
+          <li><a href="#" class="links">Products</a></li>
+          <li><a href="#" class="links">Contact</a></li>
+        </ul>
+        <div class="shopping-cart-bg shopping-cart">
+          <div type="button" class="position-relative">
+            <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-bg cart-item-num"
+            >
+              0
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="position-relative bg-container d-flex">
-      <div class="right-bg">
-        <div class="d-flex justify-content-center">
-          <div class="d-flex align-items-center mt-4">
-            <div>
-              <img src="/assets/images/logo/logo.png" class="logo" />
-            </div>
-            <div class="display-6 ms-2">
-              GoGo<span class="fw-bold">RX</span>
+      <div class="left-bg">
+        <div
+          class="d-flex align-items-center flex-column justify-content-center h-100"
+        >
+          <div class="d-flex align-items-center left-hero-section w-100">
+            <div class="slogan-container me-md-5 mt-5">
+              <h1 class="display-1 slogan">Best Drugstore In Your reach</h1>
+              <div>
+                <p class="tag-line mt-4">
+                  We try to provide all your essential medicines at your door
+                  within 1 hour after placing orders
+                </p>
+              </div>
+              <div class="mt-5">
+                <button class="btn btn-custom">Buy Now</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="left-bg">
-        <div class="d-flex">
-          <ul class="d-flex nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <div class="shopping-cart-bg position-relative">
-            <i class="fa-solid fa-cart-shopping fa-lg"
-              ><span class="cart-item-num">0</span></i
-            >
-          </div>
+      <div class="right-bg d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center">
+          <img
+            src="/assets/images/illustration.png"
+            class="img-responsive"
+            alt=""
+          />
         </div>
       </div>
       <!--for background-->
