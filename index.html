@@ -53,8 +53,13 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
         ><span>×</span></a
       >
-      <nav class="d-flex flex-column justify-content-center h-100">
-        <div class="d-flex"></div>
+      <nav class="d-flex flex-column h-100">
+        <div class="d-flex text-white mt-5 ms-4 h-100">
+          <div>
+            <div id="cart-message">No products in cart yet.</div>
+            <div id="actualCart"></div>
+          </div>
+        </div>
       </nav>
     </div>
     <div class="d-flex justify-content-between nav-bar">
@@ -202,7 +207,7 @@
         <div class="py-5 daily-deal-wrapper">
           <br /><br />
           <div class="container text-center my-3">
-            <h2 class="display-4">Daily Deal Of The Day</h2>
+            <h2 class="display-4">Daily Deals Of The Day</h2>
             <p style="color: #515151">
               Take advantage of today's best deals on your essential medicine &
               get a 30% discount.
@@ -223,12 +228,11 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Azithromycin</h5>
+                          <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                          <a href="#" class="btn btn-custom-cart"
+                            >Add To Cart</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -242,12 +246,12 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Acetaminophen</h5>
+                          <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+
+                          <a href="#" class="btn btn-custom-cart"
+                            >Add To Cart</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -261,12 +265,12 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Levothyroxine</h5>
+                          <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+
+                          <a href="#" class="btn btn-custom-cart"
+                            >Add To Cart</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -280,12 +284,12 @@
                           alt="..."
                         />
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Simvastatin</h5>
+                          <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+
+                          <a href="#" class="btn btn-custom-cart"
+                            >Add to Cart</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -319,6 +323,197 @@
           <br /><br />
         </div>
       </div>
+    </div>
+    <div class="py-5">
+      <br /><br />
+      <div class="container text-center my-3">
+        <h2 class="display-4">Best Selling Items</h2>
+        <p style="color: #515151">
+          Here are the best selling drugs & medicines from our clients at
+          discounted prices.
+        </p>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br />
     </div>
   </body>
   <script src="js/bootstrap.bundle.js"></script>

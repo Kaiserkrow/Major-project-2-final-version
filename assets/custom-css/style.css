@@ -91,6 +91,20 @@ a:hover {
 .whole-section-wrapper {
   margin-top: -5rem;
 }
+.btn-custom-cart {
+  padding: 0.5rem 2rem;
+  background-color: #6a66ff;
+  color: white;
+}
+.price {
+  color: #00d6a5;
+  font-size: larger;
+  font-weight: 500;
+}
+.btn-custom-cart:hover {
+  background-color: rgb(106, 102, 255, 0.8);
+  color: white;
+}
 @media (max-width: 1160px) {
   .links {
     display: none;
@@ -218,7 +232,8 @@ a:hover {
   border: 1px solid rgba(128, 128, 128, 0.267);
   transition: 0.2s;
 }
-.info-wrapper:hover {
+.info-wrapper:hover,
+.card:hover {
   box-shadow: -2px 30px 41px -13px rgba(0, 0, 0, 0.35);
   border-bottom: 3px solid #00d6a5;
 }
