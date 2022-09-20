@@ -49,6 +49,14 @@
         </div>
       </nav>
     </div>
+    <div id="myCart" class="cart h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+        ><span>×</span></a
+      >
+      <nav class="d-flex flex-column justify-content-center h-100">
+        <div class="d-flex"></div>
+      </nav>
+    </div>
     <div class="d-flex justify-content-between nav-bar">
       <div class="d-flex align-items-center logo-container">
         <div>
@@ -67,7 +75,7 @@
         <div onclick="openNav()">
           <img src="/assets/images/menu.png" class="menu" />
         </div>
-        <div class="shopping-cart-bg shopping-cart">
+        <div class="shopping-cart-bg shopping-cart" onclick="openCart()">
           <div type="button" class="position-relative">
             <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon"></i>
             <span
@@ -90,7 +98,7 @@
               <div>
                 <p class="tag-line mt-4">
                   We try to provide all your essential medicines at your door
-                  within 1 hour after placing orders
+                  within 1 hour after placing an order.
                 </p>
               </div>
               <div class="mt-5">
@@ -112,8 +120,207 @@
         </div>
       </div>
       <!--for background-->
-
-      <div></div>
+    </div>
+    <div>
+      <div class="position-relative">
+        <div class="d-flex justify-content-center whole-section-wrapper">
+          <div class="d-flex wrapper-flex">
+            <div class="d-flex info-wrapper">
+              <div class="info-height-setter d-flex">
+                <div
+                  class="section d-flex flex-column align-items-center justify-content-between"
+                >
+                  <div>
+                    <img
+                      src="/assets/images/overall-item-count-section/thermostat.png"
+                      alt=""
+                      class="item-count-img"
+                    />
+                  </div>
+                  <h4>Flu & Influenza</h4>
+                  <p>127 Items</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex info-wrapper">
+              <div class="info-height-setter d-flex">
+                <div
+                  class="section d-flex flex-column align-items-center justify-content-between"
+                >
+                  <div>
+                    <img
+                      src="/assets/images/overall-item-count-section/covid-icon.png"
+                      alt=""
+                      class="item-count-img"
+                    />
+                  </div>
+                  <h4>COVID 19</h4>
+                  <p>45 Items</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex wrapper-flex">
+            <div class="d-flex info-wrapper">
+              <div class="info-height-setter d-flex">
+                <div
+                  class="section d-flex flex-column align-items-center justify-content-between"
+                >
+                  <div>
+                    <img
+                      src="/assets/images/overall-item-count-section/baby-bottle-logo.png"
+                      alt=""
+                      class="item-count-img"
+                    />
+                  </div>
+                  <h4>Baby & Toddler</h4>
+                  <p>175 Items</p>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex info-wrapper">
+              <div class="info-height-setter d-flex">
+                <div
+                  class="section d-flex flex-column align-items-center justify-content-between"
+                >
+                  <div>
+                    <img
+                      src="/assets/images/overall-item-count-section/beauty-skin-logo.png"
+                      alt=""
+                      class="item-count-img"
+                    />
+                  </div>
+                  <h4>Beauty & Skin</h4>
+                  <p>280 Items</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- For sections flu, covid, baby & toddler-->
+        <div><br /><br /></div>
+        <div class="py-5 daily-deal-wrapper">
+          <br /><br />
+          <div class="container text-center my-3">
+            <h2 class="display-4">Daily Deal Of The Day</h2>
+            <p style="color: #515151">
+              Take advantage of today's best deals on your essential medicine &
+              get a 30% discount.
+            </p>
+            <div class="row mx-auto my-auto justify-content-center">
+              <div
+                id="recipeCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400/31f?text=1"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 1</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400/e66?text=2"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 2</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400/7d2?text=3"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400?text=4"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 4</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400/aba?text=5"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 5</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-3">
+                      <div class="card">
+                        <div class="card-img">
+                          <img
+                            src="//via.placeholder.com/500x400/fc0?text=6"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="card-img-overlay">Slide 6</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev bg-transparent w-aut"
+                  href="#recipeCarousel"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+                <a
+                  class="carousel-control-next bg-transparent w-aut"
+                  href="#recipeCarousel"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+        </div>
+      </div>
     </div>
   </body>
   <script src="js/bootstrap.bundle.js"></script>
