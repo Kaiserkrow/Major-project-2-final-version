@@ -297,6 +297,9 @@ a:hover {
   .carousel-inner .carousel-item > div:first-child {
     display: block;
   }
+  .card {
+    margin: auto;
+  }
 }
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,

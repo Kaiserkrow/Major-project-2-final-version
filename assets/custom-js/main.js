@@ -32,7 +32,7 @@ function closeCart() {
 let items = document.querySelectorAll(".carousel .carousel-item");
 
 items.forEach((el) => {
-  const minPerSlide = 4;
+  let minPerSlide = 4;
   let next = el.nextElementSibling;
   for (var i = 1; i < minPerSlide; i++) {
     if (!next) {
