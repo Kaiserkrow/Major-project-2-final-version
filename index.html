@@ -216,11 +216,11 @@
             <div class="row mx-auto my-auto justify-content-center">
               <div
                 id="recipeCarousel"
-                class="carousel slide carousel-dark"
+                class="carousel carousel1 slide carousel-dark"
                 data-bs-ride="carousel"
               >
                 <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
+                  <div class="carousel-item carousel-item1 active">
                     <div class="col-md-3 col-12">
                       <div class="card" style="width: 18rem">
                         <img
@@ -238,7 +238,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item carousel-item1">
                     <div class="col-md-3 col-12">
                       <div class="card" style="width: 18rem">
                         <img
@@ -257,7 +257,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item carousel-item1">
                     <div class="col-md-3 col-12">
                       <div class="card" style="width: 18rem">
                         <img
@@ -276,7 +276,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item carousel-item1">
                     <div class="col-md-3 col-12">
                       <div class="card" style="width: 18rem">
                         <img
@@ -544,7 +544,7 @@
     <br />
     <br />
     <br />
-    <div class="container text-center my-3 mt-5">
+    <div class="container text-center my-5 mt-5 mb-5">
       <h2 class="display-4 mt-5">Words From Happy Clients</h2>
       <p style="color: #515151">
         We have a large satisfied customer base. What others are saying about
@@ -552,98 +552,167 @@
       </p>
       <div class="row mx-auto my-auto justify-content-center">
         <div
-          id="recipeCarousel"
-          class="carousel slide carousel-dark"
+          id="carouselExampleIndicators"
+          class="carousel carousel-dark slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner" role="listbox">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="col-md-3 col-12">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="/assets/images/daily-deals/medicine.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Azithromycin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
+              <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>
+                      I’m their regular customer. GoGoRX was the most
+                      trustworthy name during this COVID 19 situation,
+                      delivering all drugs to my house in a timely manner. If
+                      you want to buy medicines online, GoGoRX is the trusted
+                      name.
+                    </p>
+                  </blockquote>
+                  <h3>Andrew Garcia</h3>
+                  <h4 class="h5">Customer</h4>
+                </figcaption>
+              </figure>
             </div>
             <div class="carousel-item">
-              <div class="col-md-3 col-12">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="/assets/images/daily-deals/covid-vaccine.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Acetaminophen</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
+              <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>
+                      I’m their regular customer. GoGoRX was the most
+                      trustworthy name during this COVID 19 situation,
+                      delivering all drugs to my house in a timely manner. If
+                      you want to buy medicines online, GoGoRX is the trusted
+                      name.
+                    </p>
+                  </blockquote>
+                  <h3>Andrew Garcia Sr.</h3>
+                  <h4 class="h5">Customer</h4>
+                </figcaption>
+              </figure>
             </div>
             <div class="carousel-item">
-              <div class="col-md-3 col-12">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="/assets/images/daily-deals/medicine-2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Levothyroxine</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-md-3 col-12">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="/assets/images/daily-deals/tablet.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Simvastatin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-
-                    <a href="#" class="btn btn-custom-cart">Add to Cart</a>
-                  </div>
-                </div>
-              </div>
+              <figure class="snip1533">
+                <figcaption>
+                  <blockquote>
+                    <p>
+                      I’m their regular customer. GoGoRX was the most
+                      trustworthy name during this COVID 19 situation,
+                      delivering all drugs to my house in a timely manner. If
+                      you want to buy medicines online, GoGoRX is the trusted
+                      name.
+                    </p>
+                  </blockquote>
+                  <h3>Andrew Garcia Jr.</h3>
+                  <h4 class="h5">Customer</h4>
+                </figcaption>
+              </figure>
             </div>
           </div>
-          <a
-            class="carousel-control-prev bg-transparent w-aut"
-            href="#recipeCarousel"
-            role="button"
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </a>
-          <a
-            class="carousel-control-next bg-transparent w-aut"
-            href="#recipeCarousel"
-            role="button"
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </a>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
+    <br /><br /><br /><br /><br /><br />
+    <footer class="mt-5 pt-5 pb-5">
+      <div class="mx-auto mt-5 pb-5">
+        <div class="">
+          <div class="d-flex align-items-center place-content-center me-5 mb-3">
+            <div>
+              <img src="/assets/images/logo/logo.png" class="logo" />
+            </div>
+            <div class="display-6 ms-2">
+              GoGo<span class="fw-bold">RX</span>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto footer-wrapper">
+          <div class="col-lg-3 col-12">
+            <div class="mt-5 d-flex">
+              <div>
+                <h2 class="vision">Vision</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adip elit. Pariatur
+                  quasi commodi repudiandae minus odit dolorum culpa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mt-5 d-flex">
+              <div>
+                <h2 class="vision">Contact</h2>
+                <p>Vinzons Avenue, Daet, Camarines Norte. Philippines</p>
+                <p>0912 345 6789</p>
+                <p>kaiserkrow491@gmail.com</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mt-5 d-flex">
+              <div>
+                <h2 class="vision">Information</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adg elit. Pariatur
+                  quasi commodi repudiandae minus odit dolorum culpa.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="mt-5 d-flex">
+              <div>
+                <h2 class="vision">Socials</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adng elit. Pariatur
+                  quasi commodi repudiandae minus odit dolorum culpa.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="/assets/custom-js/main.js"></script>
