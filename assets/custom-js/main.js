@@ -1,3 +1,5 @@
+let body = document.getElementById("blur-container");
+
 function openNav() {
   let width = window.innerWidth;
   let sideBar = document.getElementById("mySidebar");
@@ -7,6 +9,7 @@ function openNav() {
     sideBar.style.width = "100vw";
   } else {
     sideBar.style.width = "250px";
+    body.classList.add("blur");
   }
 }
 
@@ -19,14 +22,17 @@ function openCart() {
     cart.style.width = "100vw";
   } else {
     cart.style.width = "250px";
+    body.classList.add("blur");
   }
 }
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
+  body.classList.remove("blur");
 }
 
 function closeCart() {
   document.getElementById("myCart").style.width = "0";
+  body.classList.remove("blur");
 }
 
 let items = document.querySelectorAll(".carousel1 .carousel-item1");
