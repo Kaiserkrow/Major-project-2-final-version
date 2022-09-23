@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoGoRX - Contact</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo.png" />
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/custom-css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <div id="mySidebar" class="sidebar h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><span class="red">×</span></a
+      >
+      <nav class="d-flex flex-column justify-content-center h-100">
+        <div class="d-flex">
+          <div class="d-flex align-items-center logo-container mt-5">
+            <div>
+              <img src="/assets/images/logo/logo.png" class="logo" />
+            </div>
+            <div class="display-6 ms-2 sidebar-logo">
+              GoGo<span class="fw-bold">RX</span>
+            </div>
+          </div>
+          <ul class="hyperlinks sidebar-links">
+            <li class="p-md-3">
+              <a href="/index.html" class="links">Home</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/about.html" class="links">About</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/products.html" class="links">Products</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/contact.html" class="links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="myCart" class="cart h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+        ><span>×</span></a
+      >
+      <nav class="d-flex flex-column h-100">
+        <div class="d-flex text-white mt-5 ms-4 h-100">
+          <div class="w-100 me-2">
+            <!-- diz da cartszxsc-->
+            <div id="cart-message">No products in cart yet.</div>
+            <div id="actualCart"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="blur-container" class="">
+      <div class="d-flex justify-content-between nav-bar">
+        <a href="/index.html" class="d-flex align-items-center logo-container">
+          <div>
+            <img src="/assets/images/logo/logo.png" class="logo" />
+          </div>
+          <div class="display-6 ms-2">GoGo<span class="fw-bold">RX</span></div>
+        </a>
+
+        <div class="d-flex me-md-4">
+          <ul class="d-flex nav-links">
+            <li>
+              <a href="/index.html" class="links">Home</a>
+            </li>
+            <li>
+              <a href="/about.html" class="links">About</a>
+            </li>
+            <li><a href="/products.html" class="links">Products</a></li>
+            <li>
+              <a href="/contact.html" style="color: #6a66ff" class="links"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div onclick="openNav()">
+            <img src="/assets/images/menu.png" class="menu" />
+          </div>
+          <div class="shopping-cart-bg shopping-cart" onclick="openCart()">
+            <div type="button" class="position-relative">
+              <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-bg cart-item-num"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative bg-container d-flex">
+        <div class="left-bg">
+          <div class="d-flex h-100">
+            <div class="d-flex mb-5 left-hero-section w-100">
+              <div class="slogan-container me-md-5 mt-5">
+                <div class="slogan">Contact Us</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-bg d-flex justify-content-center"></div>
+        <!--for background-->
+      </div>
+      <div>
+        <div class="position-relative">
+          <!-- For sections flu, covid, baby & toddler-->
+          <div>
+            <div class="d-flex reliable-section flex-column">
+              <div class="w-100">
+                <h1 class="reliable">Have Questions? Reach Out To Us</h1>
+              </div>
+              <div class="row mt-3 mb-lg-5">
+                <div class="col-lg-8">
+                  <form action="" class="me-4">
+                    <div class="row">
+                      <div class="col-md-6 mt-3">
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          class="w-100 indent p-3"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <input
+                          type="text"
+                          placeholder="Email"
+                          class="w-100  indent p-3 "
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          class="w-100 indent p-3 mt-3 text-white"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <textarea
+                          type="text"
+                          placeholder="Message"
+                          class="w-100 indent p-3 mt-3 text-white"
+                          rows="6"
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    <button class="btn button">
+                      <a href="contact.html" class="text-white">Send Message!</a>
+                    </button>
+                  </form>
+                </div>
+                <div class="col-lg-4 contact-wrapper">
+                    <div>
+                        <div>
+                            <div>
+                                <div class="d-flex p-4">
+                                    <div class="me-4">
+                                        <img src="/assets/images/contact-img/location.png" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="address">Address</div>
+                                        <div class="mt-2">Vinzons Avenue, Daet, Camarines Norte, Philippines</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="d-flex p-4">
+                                    <div class="me-4">
+                                        <img src="/assets/images/contact-img/email.png" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="address">Email</div>
+                                        <div class="mt-2">kaiserkrow491@gmail.com</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="d-flex p-4">
+                                    <div class="me-4">
+                                        <img src="/assets/images/contact-img/phone.png" alt="">
+                                    </div>
+                                    <div>
+                                        <div class="address">Contact</div>
+                                        <div class="mt-2">+63 912 3456 789</div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="responsive-map mt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      
+      <br /><br /><br /><br />
+      <footer class="mt-5 pt-5 pb-2">
+        <div class="mx-auto mt-5 pb-5">
+          <div class="">
+            <div
+              class="d-flex align-items-center place-content-center me-5 mb-3"
+            >
+              <div>
+                <img src="/assets/images/logo/logo.png" class="logo" />
+              </div>
+              <div class="display-6 ms-2 text-white">
+                GoGo<span class="fw-bold">RX</span>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-auto footer-wrapper pb-4">
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Vision</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adip elit. Pariatur
+                    quasi commodi repudiandae minus odit dolorum culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Contact</h2>
+                  <p>Vinzons Avenue, Daet, Camarines Norte, Philippines</p>
+                  <p>0912 345 6789</p>
+                  <p>kaiserkrow491@gmail.com</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div class="info">
+                  <h2 class="vision">Information</h2>
+                  <p>New Products</p>
+                  <p>Top Sellers</p>
+                  <p>About Our Shop</p>
+                  <p>Secure Shopping</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Socials</h2>
+
+                  <div class="d-flex">
+                    <div>
+                      <img
+                        src="/assets/images/icon/fb.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/ig.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/twitter.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">© Copyright 2022 Team-6 GoGoRX</p>
+      </footer>
+    </div>
+  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="/assets/custom-js/main.js"></script>
+</html>
