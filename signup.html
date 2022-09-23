@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoGoRX - Home</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo.png" />
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/custom-css/signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <div id="mySidebar" class="sidebar h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><span class="red">×</span></a
+      >
+    </div>
+    <div id="myCart" class="cart h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+        ><span>×</span></a
+      >
+      <nav class="d-flex flex-column h-100">
+        <div class="d-flex text-white mt-5 ms-4 h-100">
+          <div class="w-100 me-2">
+            <!-- diz da cartszxsc-->
+            <div id="cart-message">No products in cart yet.</div>
+            <div id="actualCart"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="blur-container" class="">
+      <div class="d-flex justify-content-between nav-bar">
+        <a href="/index.html" class="d-flex align-items-center logo-container">
+          <div>
+            <img src="/assets/images/logo/logo.png" class="logo" />
+          </div>
+          <div class="display-6 ms-2">GoGo<span class="fw-bold">RX</span></div>
+        </a>
+      </div>
+      <div class="position-relative bg-container d-flex">
+        <div class="left-bg d-flex flex-column justify-content-center px-5">
+          <h1 class="text-center mt-5">Sign Up</h1>
+
+          <form class="mx-1 mx-md-4">
+            <div class="d-flex flex-row align-items-center mb-3">
+              <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="text" id="form3Example1c" class="form-control" />
+                <label class="form-label" for="form3Example1c">Your Name</label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-3">
+              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input type="email" id="form3Example3c" class="form-control" />
+                <label class="form-label" for="form3Example3c"
+                  >Your Email</label
+                >
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-3">
+              <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input
+                  type="password"
+                  id="form3Example4c"
+                  class="form-control"
+                />
+                <label class="form-label" for="form3Example4c">Password</label>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-3">
+              <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+              <div class="form-outline flex-fill mb-0">
+                <input
+                  type="password"
+                  id="form3Example4cd"
+                  class="form-control"
+                />
+                <label class="form-label" for="form3Example4cd"
+                  >Repeat your password</label
+                >
+              </div>
+            </div>
+
+            <div class="form-check d-flex justify-content-center mb-5">
+              <input
+                class="form-check-input me-2"
+                type="checkbox"
+                value=""
+                id="form2Example3c"
+              />
+              <label class="form-check-label" for="form2Example3">
+                I agree all statements in <a href="#!">Terms of service</a>
+              </label>
+            </div>
+
+            <div class="d-flex justify-content-center mb-3 mb-lg-4">
+              <button type="button" class="btn btn-custom btn-lg">
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="right-bg d-flex justify-content-center">
+          <div class="d-flex justify-content-center illustration-container">
+            <div class="d-flex justify-content-center">
+              <img
+                src="/assets/images/illustration.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!--for background-->
+      </div>
+
+      <footer class="pt-5 pb-2">
+        <div class="mx-auto mt-5 pb-5">
+          <div class="">
+            <div
+              class="d-flex align-items-center place-content-center me-5 mb-3"
+            >
+              <div>
+                <img src="/assets/images/logo/logo.png" class="logo" />
+              </div>
+              <div class="display-6 ms-2 text-white">
+                GoGo<span class="fw-bold">RX</span>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-auto footer-wrapper pb-4">
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Vision</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adip elit. Pariatur
+                    quasi commodi repudiandae minus odit dolorum culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Contact</h2>
+                  <p>Vinzons Avenue, Daet, Camarines Norte, Philippines</p>
+                  <p>0912 345 6789</p>
+                  <p>kaiserkrow491@gmail.com</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div class="info">
+                  <h2 class="vision">Information</h2>
+                  <p>New Products</p>
+                  <p>Top Sellers</p>
+                  <p>About Our Shop</p>
+                  <p>Secure Shopping</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Socials</h2>
+
+                  <div class="d-flex">
+                    <div>
+                      <img
+                        src="/assets/images/icon/fb.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/ig.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/twitter.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">© Copyright 2022 Team-6 GoGoRX</p>
+      </footer>
+    </div>
+  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="/assets/custom-js/main.js"></script>
+</html>

@@ -16,6 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body id="body">
     <div id="mySidebar" class="sidebar h-100">
@@ -215,7 +216,7 @@
           <div><br /><br /></div>
           <div class="py-5 daily-deal-wrapper">
             <br /><br />
-            <div class="container text-center my-3">
+            <div class="container text-center my-3" data-aos="fade-up">
               <h2 class="display-4">Daily Deals Of The Day</h2>
               <p style="color: #515151">
                 Take advantage of today's best deals on your essential medicine
@@ -335,187 +336,189 @@
       </div>
       <div class="py-5">
         <br /><br />
-        <div class="container text-center my-3">
+        <div class="container text-center my-3" data-aos="fade-up">
           <h2 class="display-4">Best Selling Items</h2>
           <p style="color: #515151">
             Here are the best selling drugs & medicines from our clients at
             discounted prices.
           </p>
-          <div class="row mx-auto my-auto justify-content-center">
-            <div class="row row-cols-2 row-cols-lg-4 g-3">
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/covid-vaccine.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Acetaminophen</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div class="row mx-auto my-auto justify-content-center">
+              <div class="row row-cols-2 row-cols-lg-4 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/covid-vaccine.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Acetaminophen</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/daily-deals/medicine-2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Levothyroxine</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/daily-deals/medicine-2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Levothyroxine</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/daily-deals/tablet.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Simvastatin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/daily-deals/tablet.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Simvastatin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/daily-deals/medicine.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Azithromycin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row mx-auto my-auto justify-content-center">
-            <div class="row row-cols-2 row-cols-lg-4 g-3">
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/1.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Lipitor - Atorvastatin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Hydroclorothiazide</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/3.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Ventolin HFA</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/4.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Crestor - Rosuvastatin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/daily-deals/medicine.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Azithromycin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row mx-auto my-auto justify-content-center">
-            <div class="row row-cols-2 row-cols-lg-4 g-3">
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/5.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Advair Diskus</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+            <div class="row mx-auto my-auto justify-content-center">
+              <div class="row row-cols-2 row-cols-lg-4 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lipitor - Atorvastatin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hydroclorothiazide</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Ventolin HFA</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/4.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Crestor - Rosuvastatin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/6.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Lantus Solostar</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+            </div>
+            <div class="row mx-auto my-auto justify-content-center">
+              <div class="row row-cols-2 row-cols-lg-4 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/5.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Advair Diskus</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/7.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Lyrica - Pregabalin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/6.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lantus Solostar</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <img
-                    src="/assets/images/all-items/8.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Crestor - Rosuvastatin</h5>
-                    <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
-                    <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/7.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lyrica - Pregabalin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="/assets/images/all-items/8.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Crestor - Rosuvastatin</h5>
+                      <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                      <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -525,7 +528,7 @@
         <br /><br />
       </div>
       <div class="mt-5 w-100 d-flex justify-content-center">
-        <div class="bottle-mockup-section d-flex">
+        <div class="bottle-mockup-section d-flex" data-aos="fade-right">
           <div class="d-flex whole-bottle-mockup">
             <div class="left-half-bottle-mockup mt-4">
               <h2>Transderm Scop Scopolamine</h2>
@@ -552,7 +555,7 @@
       <br />
       <br />
       <br />
-      <div class="container text-center my-5 mt-5 mb-5">
+      <div class="container text-center my-5 mt-5 mb-5" data-aos="fade-left">
         <h2 class="display-4 mt-5">Words From Happy Clients</h2>
         <p style="color: #515151">
           We have a large satisfied customer base. What others are saying about
@@ -753,6 +756,10 @@
       </footer>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="/assets/custom-js/main.js"></script>
 </html>

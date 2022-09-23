@@ -1,11 +1,11 @@
 .right-bg {
   width: 50%;
-  height: 35vh;
+  height: 100vh;
   background-color: #00d6a5;
 }
 .left-bg {
   width: 50%;
-  height: 35vh;
+  height: 100vh;
   background-color: #eafffa;
 }
 .nav-bar {
@@ -61,7 +61,6 @@ a:hover {
 .left-hero-section {
   height: 100%;
   justify-content: center;
-  align-items: flex-end;
 }
 
 .tag-line {
@@ -74,7 +73,6 @@ a:hover {
 .slogan-container {
   max-width: 550px;
   padding: 0 1rem;
-  margin-bottom: 4rem;
 }
 .slogan-container > h1 {
   font-weight: 400;
@@ -89,14 +87,15 @@ a:hover {
 .info-wrapper p {
   color: #515151;
 }
-
+.whole-section-wrapper {
+  margin-top: -5rem;
+}
 .btn-custom-cart {
   font-weight: 500;
   padding: 0.5rem 2rem;
   background-color: #6a66ff;
   color: white;
 }
-
 .price {
   color: #00d6a5;
   font-size: larger;
@@ -188,6 +187,10 @@ a:hover {
   transition: margin-left 0.5s;
   padding: 16px;
 }
+.links {
+  position: relative;
+  z-index: 999;
+}
 
 /* ---------------------HOVERS sidebar--------------------------------- */
 
@@ -231,15 +234,16 @@ a:hover {
   height: 170px;
 }
 .info-wrapper {
-  text-align: center;
-  padding: 1rem 1rem 7rem 1rem;
+  padding: 4rem;
   background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.267);
   transition: 0.2s;
 }
-.info-wrapper img {
-  margin-bottom: 1rem;
+.info-wrapper:hover,
+.card:hover {
+  box-shadow: -2px 30px 41px -13px rgba(0, 0, 0, 0.35);
+  border-bottom: 3px solid #00d6a5;
 }
-
 .cart .closebtn {
   position: absolute;
   top: 20px;
@@ -300,10 +304,6 @@ a:hover {
 .price-mockup {
   font-weight: 500;
 }
-.slogan {
-  font-size: 40px;
-  font-weight: 500;
-}
 @media (max-width: 768px) {
   .mockup-img {
     margin: 4rem 0 0 0;
@@ -318,29 +318,22 @@ a:hover {
   .info-wrapper {
     padding: 3rem;
   }
-  .right-bg {
-    height: 0;
-  }
+  .right-bg,
   .left-bg {
     width: 100%;
-    height: 0vh;
-    border-bottom: 1px solid #00d6a5;
-  }
-  .slogan {
-    font-size: 45px;
-    font-weight: 400;
+    height: 105vh;
   }
   .slogan-container {
-    margin-left: 0rem;
-    margin-bottom: 0;
+    margin: 0;
   }
-
+  .slogan {
+    margin-top: 4rem;
+  }
   .btn-custom {
     padding: 1rem 3rem;
   }
   .left-hero-section {
-    justify-content: start;
-    align-items: flex-end;
+    justify-content: center;
   }
   .tag-line {
     font-size: 18px;
@@ -355,8 +348,8 @@ a:hover {
     flex-direction: column;
   }
   .whole-section-wrapper {
-    margin: auto;
-    flex-direction: column;
+    width: 85%;
+    margin: -5rem auto;
   }
 }
 
@@ -484,37 +477,6 @@ footer {
   color: #00d6a5;
   cursor: pointer;
 }
-
-.socials:hover {
-  filter: invert(63%) sepia(76%) saturate(1248%) hue-rotate(116deg)
-    brightness(93%) contrast(101%);
-}
-.socials:first-of-type {
-  margin-left: 0;
-}
-.blur {
-  filter: blur(3px) brightness(0.8);
-
-  transition: 0.3s;
-}
-
-.logo-container:hover {
-  color: black;
-}
-.reliable {
-  font-weight: 500;
-}
-.reliable-section {
-  padding-top: 6rem;
-  width: 1150px;
-  max-width: 90%;
-  margin: auto;
-}
-.reliable-section p {
-  color: #515151;
-  line-height: 35px;
-}
-
 @media (max-width: 768px) {
   .footer-logo {
     place-content: center;
@@ -536,4 +498,20 @@ footer {
   margin: 0 0.5rem;
   opacity: 0.7;
   cursor: pointer;
+}
+.socials:hover {
+  filter: invert(63%) sepia(76%) saturate(1248%) hue-rotate(116deg)
+    brightness(93%) contrast(101%);
+}
+.socials:first-of-type {
+  margin-left: 0;
+}
+.blur {
+  filter: blur(3px) brightness(0.8);
+
+  transition: 0.3s;
+}
+
+.logo-container:hover {
+  color: black;
 }
