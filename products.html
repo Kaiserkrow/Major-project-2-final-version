@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoGoRX - Products</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo.png" />
+
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/assets/custom-css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="body">
+    <div id="mySidebar" class="sidebar h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><span class="red">×</span></a
+      >
+      <nav class="d-flex flex-column justify-content-center h-100">
+        <div class="d-flex">
+          <div class="d-flex align-items-center logo-container mt-5">
+            <div>
+              <img src="/assets/images/logo/logo.png" class="logo" />
+            </div>
+            <div class="display-6 ms-2 sidebar-logo">
+              GoGo<span class="fw-bold">RX</span>
+            </div>
+          </div>
+          <ul class="hyperlinks sidebar-links">
+            <li class="p-md-3">
+              <a href="/index.html" class="links">Home</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/about.html" class="links">About</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/products.html" class="links">Products</a>
+            </li>
+            <li class="p-md-3">
+              <a href="/contact.html" class="links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="myCart" class="cart h-100">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeCart()"
+        ><span>×</span></a
+      >
+      <nav class="d-flex flex-column h-100">
+        <div class="d-flex text-white mt-5 ms-4 h-100">
+          <div class="w-100 me-2">
+            <!-- diz da cartszxsc-->
+            <div id="cart-message">No products in cart yet.</div>
+            <div id="actualCart"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="blur-container" class="">
+      <div class="d-flex justify-content-between nav-bar">
+        <a href="/index.html" class="d-flex align-items-center logo-container">
+          <div>
+            <img src="/assets/images/logo/logo.png" class="logo" />
+          </div>
+          <div class="display-6 ms-2">GoGo<span class="fw-bold">RX</span></div>
+        </a>
+
+        <div class="d-flex me-md-4">
+          <ul class="d-flex nav-links">
+            <li>
+              <a href="/index.html" class="links">Home</a>
+            </li>
+            <li>
+              <a href="/about.html" class="links">About</a>
+            </li>
+            <li>
+              <a href="/products.html" style="color: #6a66ff" class="links"
+                >Products</a
+              >
+            </li>
+            <li><a href="/contact.html" class="links">Contact</a></li>
+          </ul>
+          <div onclick="openNav()">
+            <img src="/assets/images/menu.png" class="menu" />
+          </div>
+          <div class="shopping-cart-bg shopping-cart" onclick="openCart()">
+            <div type="button" class="position-relative">
+              <i class="fa-solid fa-cart-shopping fa-lg shopping-cart-icon"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill cart-bg cart-item-num"
+              >
+                0
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative bg-container d-flex">
+        <div class="left-bg">
+          <div class="d-flex h-100">
+            <div class="d-flex mb-5 left-hero-section w-100">
+              <div class="slogan-container me-md-5 mt-5">
+                <div class="slogan">On Sale</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-bg d-flex justify-content-center"></div>
+        <!--for background-->
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <div id="pageNum1" class="container text-center my-3 show">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/covid-vaccine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Acetaminophen</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Levothyroxine</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/tablet.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Simvastatin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/daily-deals/medicine.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Azithromycin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lipitor - Atorvastatin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hydroclorothiazide</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ventolin HFA</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crestor - Rosuvastatin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Advair Diskus</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lantus Solostar</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/7.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lyrica - Pregabalin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/8.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Crestor - Rosuvastatin</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pageNum2" class="container text-center my-3 hide">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/9.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Remdesivir Veklury</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/10.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Monoclonal Antibodies</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/11.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Electron Microspope</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/12.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Surgical Mask</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+          <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/13.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tylenol</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/14.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Baby Cough Syrup</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/15.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Neutrogena Cleanser</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/assets/images/all-items/16.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Boiron Sulphur</h5>
+                  <p class="card-text price"><s>₱1,500</s> ₱1,200</p>
+                  <a href="#" class="btn btn-custom-cart">Add To Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------PAGINATION---------------------------->
+      <nav aria-label="Page navigation ">
+        <ul class="pagination d-flex justify-content-center">
+          <li class="page-item">
+            <a
+              class="page-link active"
+              id="page-1"
+              href="#"
+              onclick="pageReveal(1)"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" id="page-2" href="#" onclick="pageReveal(2)"
+              >2</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <br /><br /><br /><br /><br /><br />
+      <footer class="mt-5 pt-5 pb-2">
+        <div class="mx-auto mt-5 pb-5">
+          <div class="">
+            <div
+              class="d-flex align-items-center place-content-center me-5 mb-3"
+            >
+              <div>
+                <img src="/assets/images/logo/logo.png" class="logo" />
+              </div>
+              <div class="display-6 ms-2 text-white">
+                GoGo<span class="fw-bold">RX</span>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-auto footer-wrapper pb-4">
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Vision</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adip elit. Pariatur
+                    quasi commodi repudiandae minus odit dolorum culpa.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Contact</h2>
+                  <p>Vinzons Avenue, Daet, Camarines Norte, Philippines</p>
+                  <p>0912 345 6789</p>
+                  <p>kaiserkrow491@gmail.com</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div class="info">
+                  <h2 class="vision">Information</h2>
+                  <p>New Products</p>
+                  <p>Top Sellers</p>
+                  <p>About Our Shop</p>
+                  <p>Secure Shopping</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12">
+              <div class="mt-5 d-flex">
+                <div>
+                  <h2 class="vision">Socials</h2>
+
+                  <div class="d-flex">
+                    <div>
+                      <img
+                        src="/assets/images/icon/fb.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/ig.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="/assets/images/icon/twitter.png"
+                        class="socials"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">© Copyright 2022 Team-6 GoGoRX</p>
+      </footer>
+    </div>
+  </body>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="/assets/custom-js/pagination.js"></script>
+  <script src="/assets/custom-js/main.js"></script>
+</html>
